@@ -1,0 +1,308 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-03-10 01:25:17'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/01/230301-netlaw/" title="数字法学/网络与信息法学科领域《2022年度发文观察》">数字法学/网络与信息法学科领域《2022年度发文观察》</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-01T11:03:26.000Z" title="Created 2023-03-01 11:03:26">2023-03-01</time></span></div><div class="content">北京航空航天大学法学院本科生林予萱、吴倩倩、梁书铭、杨艺、谢筱栩、文彬整理资料，北京航空航天大学法学院硕士研究生董菁、陆睿、唐浩隆审稿。
+《网络法前沿》微信公众号出品 选取标准说明
+为全面学习贯彻党的二十大精神，坚定履行建设网络强国和数字中国的使命，为我国数字产业和网络空间的有序健康发展保驾护航，数字法学/网络与信息法学领域的学科建设与学术研究具有重要的意义。随着《关于构建数据基础制度更好发挥数据要素作用的意见》的出台，2023年围绕网络法展开更深入的探讨与研究，故有必要对数字法学/网络与信息法学2022年的发文进行单独观察，以展望全新到来的2023年。
+本报告沿用了前文学科报告基础数据，在此基础上重新摘选、补充了与数字法学/网络与信息法学研究有关的文章，将其分为14个单元，供各位读者参考。为充分展示和应作者意愿，本部分将Frontiers
+of Law in China (Mar 2022, Volume 17 Issue 1) 7篇论文中的有关篇目一并纳入，特此说明。
+数字法学/网络与信息法学是我国法学专业新兴的二级学科之一，伴随着互联网的普及和广泛应用而发展。在我国，从著述和开设 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/02/09/1vue-opx-Readme/" title="1vue-opx">1vue-opx</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-02-09T14:40:08.000Z" title="Created 2023-02-09 14:40:08">2023-02-09</time></span></div><div class="content">OPX依赖
+123456789yarn create vite &lt;my-project&gt; --template vue-tscd &lt;my-project&gt;yarnyarn upgrade-interactive --latestyarn add -D sassyarn add -D @types/node # vite.config.ts 找不到 pathyarn add -D @types/lodash-es # element 找不到类型yarn add -D type-fest # element 找不到类型
+123456789101112131415161718192021222324252627282930313233343536373839404142434445# vueyarn add piniayarn add axios vue-axiosyarn add vue-router@^4yarn add vue-i18n@nextyarn add vue3-count-toyarn add vuedraggable@nextyarn add no ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/02/09/1vue-pwa-Readme/" title="1vue-pwa">1vue-pwa</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-02-09T14:39:08.000Z" title="Created 2023-02-09 14:39:08">2023-02-09</time></span></div><div class="content">PWA依赖
+12345678910npm install -g @ionic/cli@latestionic start --helpionic start pwa tabs --type vue --capacitor --no-deps --no-gitcd pwayarnyarn upgrade-interactive --latestnpx browserslist@latest --update-dbnpm install -g @vue/clivue add pwa
+12345678910111213141516# bug?yarn add @babel/coreyarn remove @vue/cli-plugin-e2e-cypress cypress# tab1yarn add @ionic/pwa-elements # 摄像头APIyarn add @capacitor/camera# tab3-ossClientyarn add ali-oss crypto-jsyarn add -D @types/ali-oss @types/crypto-js# tab3-h ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/02/01/1py/" title="1py">1py</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-02-01T08:43:08.000Z" title="Created 2023-02-01 08:43:08">2023-02-01</time></span></div><div class="content">Django
+安装环境
+12345https://bootstrap.pypa.io/get-pip.pypython get-pip.py# https://xyuxf.com/archives/2114@uncomment python3x._pth &quot;import site&quot;@touch &quot;import os,sys;sys.path.insert(0,os.path.dirname(sys.argv[0]));&quot; &gt; Lib\site-packages\fixed.pth
+不需要的方案，site包含这个
+12# https://blog.csdn.net/brian_keepwalking/article/details/106440489echo &quot;Lib\site-packages&quot; &gt; python311._pth
+创建项目
+本地创建
+12345cd django-projectspython -m pip install -t site-packages -i http://pypi.douban. ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/10/1java/" title="1java">1java</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-01-10T17:01:08.000Z" title="Created 2023-01-10 17:01:08">2023-01-10</time></span></div><div class="content">Spring Boot
+安装环境
+运行环境 jdk-11
+打开
+https://jdk.java.net/java-se-ri/11
+下载
+https://download.java.net/openjdk/jdk11/ri/openjdk-11+28_windows-x64_bin.zip
+开发环境 jdk-17
+打开
+https://jdk.java.net/java-se-ri/17
+下载
+https://download.java.net/openjdk/jdk17/ri/openjdk-17+35_windows-x64_bin.zip
+vscode 插件
+安装
+
+
+Java Extension Pack
+
+
+Spring Boot Extension Pack
+
+
+Gradle for Java
+
+
+脚手架
+Ctrl+Shift+P，然后输入 Spring Initializr 选择 gradle 开始
+选择
+
+
+Spring Web
+
+
+Thymeleaf
+
+
+Lombok
+
+
+Spring Boot DevTools
+
+
+MySQL Driver
+
+
+Spring Co ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/01/230101-uml/" title="uml bpmn">uml bpmn</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-01-01T11:03:26.000Z" title="Created 2023-01-01 11:03:26">2023-01-01</time></span></div><div class="content">1∘ 1^\circ 1∘ 不定积分的概念
+若f(x) f(x) f(x)为连续抣数及
+F′(x)=f(x) F^{\prime}(x)=f(x) F′(x)=f(x)，则
+∫f(x)dx=F(x)+C
+\int f(x) d x=F(x)+C
+∫f(x)dx=F(x)+C
+Net ATP yields per hexose
+
+
+Stage
+Direct Products
+ATP Yields
+
+
+
+
+Glycolysis
+2 ATP
+
+
+2 NADH
+3–5 ATP
+
+
+Pyruvaye oxidation
+2 NADH
+5 ATP
+
+
+Citric acid cycle
+2 ATP
+
+
+6 NADH
+15 ATP
+
+
+2 FADH2
+3 ATP
+
+
+30–32 ATP
+
+
+
+
+
+
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/12/27/1vue/" title="1vue">1vue</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-12-27T11:25:08.000Z" title="Created 2022-12-27 11:25:08">2022-12-27</time></span></div><div class="content">windows
+12get-ExecutionPolicyset-ExecutionPolicy RemoteSigned
+注册表
+12[HKEY_CLASSES_ROOT\.ts] 改为 .ts1[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Kindmap].ts=&quot;document&quot;
+vite.js
+package.json
+12&quot;build&quot;: &quot;vue-tsc --noEmit --skipLibCheck &amp;&amp; vite build&quot;,&quot;build1&quot;: &quot;vue-tsc --noEmit --skipLibCheck &amp;&amp; node --max_old_space_size=16384 ./node_modules/vite/bin/vite.js build&quot;,
+tsconfig.json
+1&quot;exclude&quot;: [&quot; ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/12/27/1tex/" title="1tex">1tex</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-12-27T11:25:03.000Z" title="Created 2022-12-27 11:25:03">2022-12-27</time></span></div><div class="content">基础设置
+tlmgr
+https://blog.csdn.net/qq_41437512/article/details/113917059
+1234tlmgr --repository http://www.texlive.info/tlgpg/ install tlgpgtlmgr repository set https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnettlmgr repository set https://mirror.bjtu.edu.cn/CTAN/systems/texlive/tlnet/tlmgr repository set https://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet/
+12345678tlmgr list --only-installedtlmgr install --with-doc --with-src pdfcol psnfss minifp# tlmgr install caption environ eso ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/12/27/1git/" title="1git">1git</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-12-27T11:24:43.000Z" title="Created 2022-12-27 11:24:43">2022-12-27</time></span></div><div class="content">git
+git clone https://&lt;ghp&gt;@github.com/&lt;user&gt;/&lt;repo&gt;.git
+git clone https://git.sinacloud.com/ddww
+使用已有仓库
+1234git branchgit remote -vgit remote add origin https://gitee.com/&lt;username&gt;/&lt;repo&gt;.gitgit push -f origin master
+更新已有仓库
+1git remote -v
+1234git remote rm origingit remote add origin https://gitee.com/dudongbi/css.git或者git remote set-url origin https://&lt;你的钥匙&gt;@github.com/dudongbi/pwa-dist.git
+1git push -u origin master
+回退版本
+12git loggit reset --hard HEAD^
+删除历 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/12/26/1/" title="memo">memo</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-12-26T16:44:09.000Z" title="Created 2022-12-26 16:44:09">2022-12-26</time></span></div><div class="content">assets
+1D:\zip\7z.exe a -tzip ../%~n0-%date:~2,2%%date:~5,2%%date:~8,2%-%time:~0,2%%time:~3,2%.zip ./* -xr!&quot;.git&quot; -xr!node_modules -xr!dist -xr!android
+zip-upload.zip
+CompressiveSensing.cpp
+PartialFilter.cpp
+ec-100yo.html
+ec-wall.html
+java-demo.zip
+makedocx.py
+PortableCookpot_1202v3.zip
+js-pets.html
+GFW
+访问
+https://microsoftedge.microsoft.com/addons/detail/replace-google-cdn/cojepngjobmaiajphkijbdcdjnnjhpjc?hl=zh-CN
+node 仓库
+npm config set registry https://registry.npm.taobao.org
+git 下载
+ ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/01/230301-netlaw/" title="数字法学/网络与信息法学科领域《2022年度发文观察》">数字法学/网络与信息法学科领域《2022年度发文观察》</a><time datetime="2023-03-01T11:03:26.000Z" title="Created 2023-03-01 11:03:26">2023-03-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/02/09/1vue-opx-Readme/" title="1vue-opx">1vue-opx</a><time datetime="2023-02-09T14:40:08.000Z" title="Created 2023-02-09 14:40:08">2023-02-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/02/09/1vue-pwa-Readme/" title="1vue-pwa">1vue-pwa</a><time datetime="2023-02-09T14:39:08.000Z" title="Created 2023-02-09 14:39:08">2023-02-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/02/01/1py/" title="1py">1py</a><time datetime="2023-02-01T08:43:08.000Z" title="Created 2023-02-01 08:43:08">2023-02-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/01/10/1java/" title="1java">1java</a><time datetime="2023-01-10T17:01:08.000Z" title="Created 2023-01-10 17:01:08">2023-01-10</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/django/" style="font-size: 1.1em; color: #999">django</a> <a href="/tags/assets/" style="font-size: 1.1em; color: #999">assets</a> <a href="/tags/java/" style="font-size: 1.1em; color: #999">java</a> <a href="/tags/spring-boot/" style="font-size: 1.1em; color: #999">spring boot</a> <a href="/tags/uml/" style="font-size: 1.1em; color: #999">uml</a> <a href="/tags/ts/" style="font-size: 1.5em; color: #99a9bf">ts</a> <a href="/tags/jm/" style="font-size: 1.3em; color: #99a1ac">jm</a> <a href="/tags/python/" style="font-size: 1.1em; color: #999">python</a> <a href="/tags/vue/" style="font-size: 1.5em; color: #99a9bf">vue</a> <a href="/tags/tex/" style="font-size: 1.1em; color: #999">tex</a> <a href="/tags/spring/" style="font-size: 1.1em; color: #999">spring</a> <a href="/tags/law/" style="font-size: 1.1em; color: #999">law</a> <a href="/tags/gfw/" style="font-size: 1.1em; color: #999">gfw</a> <a href="/tags/memo/" style="font-size: 1.1em; color: #999">memo</a> <a href="/tags/git/" style="font-size: 1.1em; color: #999">git</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">March 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">February 2023</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">January 2023</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">December 2022</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2008/12/"><span class="card-archive-list-date">December 2008</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">12</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-03-10T01:25:17.200Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
