@@ -86,15 +86,23 @@ sys.path.insert(0, 'vendor')
 
 ```bash
 python manage.py migrate
-python manage.py createsuperuser --email admin@example.com --username admin
+#python manage.py createsuperuser --email admin@example.com --username admin
 python manage.py startapp web
 python manage.py runserver
 ```
 
-`python manage.py shell`
+创建用户 `python manage.py shell`
 ```bash
 >>> from django.contrib.auth.models import User
->>> user = User.objects.create_user('dudongbi', 'dudongbi@qq.com', '?')
+>>> user = User.objects.create_user('dudongbi', 'dudongbi@qq.com', '123456789')
+>>> user.save()
+```
+
+忘记密码 `python manage.py shell`
+```bash
+>>> from django.contrib.auth.models import User
+>>> user = User.objects.get(pk=1)
+>>> user.set_password('123456789')
 >>> user.save()
 ```
 
