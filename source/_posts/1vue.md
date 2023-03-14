@@ -1,7 +1,7 @@
 ---
 title: 1vue
 date: 2022-12-27 11:25:08
-tags: [vue,ts]
+tags: [vue]
 ---
 
 # windows

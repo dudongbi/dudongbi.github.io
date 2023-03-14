@@ -1,7 +1,7 @@
 ---
 title: 1py
 date: 2023-02-01 08:43:08
-tags: [python,django]
+tags: python
 ---
 
 # Django

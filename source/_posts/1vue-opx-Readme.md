@@ -1,7 +1,7 @@
 ---
 title: 1vue-opx
 date: 2023-02-09 14:40:08
-tags: [vue,ts]
+tags: [vue]
 ---
 
 # OPX依赖

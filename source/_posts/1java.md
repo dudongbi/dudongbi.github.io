@@ -1,7 +1,7 @@
 ---
 title: 1java
 date: 2023-01-10 17:01:08
-tags: [java,spring,spring boot]
+tags: java
 ---
 
 # Spring Boot

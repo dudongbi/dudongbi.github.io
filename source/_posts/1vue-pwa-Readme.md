@@ -1,7 +1,7 @@
 ---
 title: 1vue-pwa
 date: 2023-02-09 14:39:08
-tags: [vue,ts]
+tags: [vue]
 ---
 
 # PWA依赖
